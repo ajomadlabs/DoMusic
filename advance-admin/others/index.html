@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Home</title>
+
+    <!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+       <!--CUSTOM BASIC STYLES-->
+    <link href="assets/css/basic.css" rel="stylesheet" />
+    <!--CUSTOM MAIN STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="css/materialize.min.css">
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="Do music pages\Project\welcome.html">DO MUSIC</a>
+            </div>
+
+            <div class="header-right">
+
+                <a href="message-task.html" class="btn btn-info" title="Message"><b>30 </b><i class="fa fa-envelope-o fa-2x"></i></a>
+                <a href="message-task.html" class="btn btn-primary" title="Tasks"><b>40 </b><i class="fa fa-bars fa-2x"></i></a>
+                <a href="Do music pages/Project/login.php" class="btn btn-danger" title="Logout"><i class="fa fa-user fa-2x"></i></a>
+
+            </div>
+        </nav>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <div class="user-img-div">
+                            <img src="Do music pages/IMG-20141129-WA0022.jpg" class="img-circle" style="width: 100px;"/>
+
+                            <div class="inner-text">
+                                Anju Ann Mathew
+                            <br />
+                                <small>Last Login : 2 Weeks Ago </small>
+                            </div>
+                        </div>
+
+                    </li>
+
+
+                    <li>
+                        <a class="active-menu" href="index.html"><i class="fa fa-dashboard "></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-desktop "></i>Home <span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#"><i class="fa fa-toggle-on"></i>Admin Panel</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-bell "></i>Notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#"><i class="fa fa-yelp "></i>Song Edition<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="eng.html"><i class="fa fa-coffee"></i>English</a>
+                            </li>
+                            <li>
+                                <a href="mal.html"><i class="fa fa-flash "></i>Malayalam</a>
+                            </li>
+                             <li>
+                                <a href="hindi.html"><i class="fa fa-key "></i>Hindi</a>
+                            </li>
+                             <li>
+                                <a href="tamil.html"><i class="fa fa-send "></i>Tamil</a>
+                            </li>
+                            
+                             <li>
+                                <a href="song.html"><i class="fa fa-recycle "></i>Add or Remove</a>
+                            </li>
+                            
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="table.html"><i class="fa fa-flash "></i>Data Tables </a>
+                        
+                    </li>
+                     <li>
+                        <a href="#"><i class="fa fa-bicycle "></i>Forms <span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                           
+                             <li>
+                                <a href="form.html"><i class="fa fa-desktop "></i>Basic Form</a>
+                            </li>
+                             <li>
+                                <a href="form-advance.html"><i class="fa fa-code "></i>User Profile Form</a>
+                            </li>
+                             
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap "></i>Registered Users<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#"><i class="fa fa-bicycle "></i>User Count</a>
+                            </li>
+                             <li>
+                                <a href="#"><i class="fa fa-flask "></i>User List</a>
+                            </li>
+                            <li>
+                                <a href="#">Studio<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#"><i class="fa fa-plus "></i>New-releases</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-comments-o "></i>Playlist</a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+                   
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">DO-Music Admin Panel</h1>
+                        <h1 class="page-subhead-line">Welcome to D0-Music Admin Panel</h1>
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="main-box bg-primary">
+                            <a href="#">
+                                <i class="fa fa-bolt fa-5x"></i>
+                                <h5>Features</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-box mb-dull">
+                            <a href="#">
+                                <i class="fa fa-plug fa-5x"></i>
+                                <h5>Recent Views</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="main-box mb-pink">
+                            <a href="#">
+                                <i class="fa fa-dollar fa-5x"></i>
+                                <h5>New Hits</h5>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /. ROW  -->
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div id="reviews" class="carousel slide" data-ride="carousel">
+
+                                    <div class="carousel-inner">
+                                        <div class="item active">
+
+                                            <div class="col-md-10 col-md-offset-1">
+
+                                                <h4><i class="fa fa-quote-left"></i>Music is a moral law. It gives soul to the universe, wings to the mind, flight to the imagination, and charm and gaiety to life and to everything.<i class="fa fa-quote-right"></i></h4>
+                                                <div class="user-img pull-right">
+                                                    <img src="Do music pages/a.jpg" alt="" class="img-u image-responsive" />
+                                                </div>
+                                                <h5 class="pull-right"><strong class="c-black">Plato</strong></h5>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="col-md-10 col-md-offset-1">
+
+                                                <h4><i class="fa fa-quote-left"></i>One good thing about music, when it hits you, you feel no pain. <i class="fa fa-quote-right"></i></h4>
+                                                <div class="user-img pull-right">
+                                                    <img src="Do music pages/b.jpg" alt="" class="img-u image-responsive" />
+                                                </div>
+                                                <h5 class="pull-right"><strong class="c-black">Bob Marley</strong></h5>
+                                            </div>
+
+                                        </div>
+                                        <div class="item">
+                                            <div class="col-md-10 col-md-offset-1">
+
+                                                <h4><i class="fa fa-quote-left"></i>If music be the food of love, play on. <i class="fa fa-quote-right"></i></h4>
+                                                <div class="user-img pull-right">
+                                                    <img src="Do music pages/c.jpg" alt="" class="img-u image-responsive" />
+                                                </div>
+                                                <h5 class="pull-right"><strong class="c-black">William Shakespeare</strong></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--INDICATORS-->
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#reviews" data-slide-to="0" class="active"></li>
+                                        <li data-target="#reviews" data-slide-to="1"></li>
+                                        <li data-target="#reviews" data-slide-to="2"></li>
+                                    </ol>
+                                    <!--PREVIUS-NEXT BUTTONS-->
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- /. ROW  -->
+                        <hr />
+
+                        <div class="panel panel-default">
+
+                            <div id="carousel-example" class="carousel slide" data-ride="carousel" style="border: 5px solid #000;">
+
+                                <div class="carousel-inner">
+                                    <div class="item active">
+
+                                        <img src="Do music pages/guitar-windows-poetry-music-359268.jpg"alt="" />
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/img/slideshow/2.jpg" alt="" />
+
+                                    </div>
+                                    <div class="item">
+                                        <img src="assets/img/slideshow/3.jpg" alt="" />
+
+                                    </div>
+                                </div>
+                                <!--INDICATORS-->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example" data-slide-to="2"></li>
+                                </ol>
+                                <!--PREVIUS-NEXT BUTTONS-->
+                                <a class="left carousel-control" href="#carousel-example" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.REVIEWS &  SLIDESHOW  -->
+                    <div class="col-md-4">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Recent Chat History
+                            </div>
+                            <div class="panel-body" style="padding: 0px;">
+                                <div class="chat-widget-main">
+
+
+                                    <div class="chat-widget-left">
+                                        ............
+                                    </div>
+                                    <div class="chat-widget-name-left">
+                                        <h4>Ashna Ann Babu</h4>
+                                    </div>
+                                    <div class="chat-widget-right">
+                                        ............
+                                    </div>
+                                    <div class="chat-widget-name-right">
+                                        <h4>Ajo John</h4>
+                                    </div>
+                                    <div class="chat-widget-left">
+                                        ..............
+                                    </div>
+                                    <div class="chat-widget-name-left">
+                                        <h4>Abhijith MD</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Enter Message" />
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-success" type="button">SEND</button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!--/.Chat Panel End-->
+                </div>
+                <!-- /. ROW  -->
+
+
+                <div class="row">
+
+                    <div class="col-md-8">
+                        <div class="list-group">
+                            <a href="#" class="list-group-item active">
+                                <h4 class="list-group-item-heading">LIST GROUP HEADING</h4>
+                                <p class="list-group-item-text" style="line-height: 30px;">
+                                    Recent News updates and the favourite news will be available here..
+                                </p>
+                            </a>
+                        </div>
+                        <br />
+                        <!-- 16:9 aspect ratio -->
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/zpOULjyy-n8?rel=0"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <i class="fa fa-bell fa-fw"></i>Notifications Panel
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="list-group">
+
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-twitter fa-fw"></i>Followers
+                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-envelope fa-fw"></i>Message Sent
+                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-tasks fa-fw"></i>Comments
+                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-upload fa-fw"></i>Server Rebooted
+                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-bolt fa-fw"></i>Server Crashed!
+                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-warning fa-fw"></i>Server Not Responding
+                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                    </span>
+                                    </a>
+
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-shopping-cart fa-fw"></i>New Release
+                                    <span class="pull-right text-muted small"><em>9:49 AM</em>
+                                    </span>
+                                    </a>
+                                </div>
+                                <!-- /.list-group -->
+                                <a href="#" class="btn btn-info btn-block">View All Playlist</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--/.Row-->
+                <hr />
+                <!--<div class="row">
+
+                    <div class="col-md-4">
+                        <div class="panel panel-success">
+                            <div class="panel-heading">
+                                Recent Comments
+                            </div>
+                            <div class="panel-body">
+                                <ul class="media-list">
+
+                                    <li class="media">
+
+                                        <div class="media-body">
+
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle img-comments" src="assets/img/user.png" />
+                                                </a>
+                                                <div class="media-body">
+                                                    <h4 class="media-heading">..... </h4>
+                                                    .......
+              
+              <!-- Nested media object 
+                                                    <div class="media">
+                                                        <a class="pull-left" href="#">
+                                                            <img class="media-object img-circle img-comments" src="assets/img/user.gif" />
+                                                        </a>
+                                                        <div class="media-body">
+                                                            <h4 class="media-heading">Amet ligula enim</h4>
+                                                            Donec sit amet ligula enim .
+                                                        </div>
+                                                    </div>
+                                                    <div class="media">
+                                                        <a class="pull-left" href="#">
+                                                            <img class="media-object img-circle img-comments" src="assets/img/user.png" />
+                                                        </a>
+                                                        <div class="media-body">
+                                                            <h4 class="media-heading">Donec t ligula enim</h4>
+                                                            Donec sit amet  amet ligula enim . 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+                <!--/.Row-->
+                <hr />
+                <!--/.ROW-->
+
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+
+      <!-- /. FOOTER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+       <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    
+
+
+</body>
+</html>

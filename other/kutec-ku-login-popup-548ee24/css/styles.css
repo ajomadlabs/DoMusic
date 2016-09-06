@@ -1,0 +1,30 @@
+
+
+@charset "utf-8";
+/* CSS by TeckStack.com */
+
+*{ margin: 0; }
+
+body{ background: #930; font: 16px/150% Verdana, Geneva, sans-serif;}
+.ar{ float: right; }
+.al{ float: left;}
+.clear{ clear: both;}
+a{ text-decoration: none; color: #666;}
+
+#wrapper{ margin: 0 auto; width: 960px; position: relative; }
+#nav li{ float: left; list-style: none; padding: 5px 10px; color: #000; text-transform: uppercase;  }
+#nav li a{ text-decoration: none; color: #fff; display: block; text-transform: none;}
+
+form{ background: #eee; padding: 10px; }
+form p{ padding: 5px 0;}
+form .title{ min-width: 100px; display: inline-block; }
+form input[type=text], form input[type=password]{ border: 1px solid #fff; padding: 5px;}
+
+.button{ display: inline-block; background: #000; padding:5px 10px; z-index: 0; color: #fff; }
+.overlay{ z-index:5; background: rgba(0, 0, 0, .50); display: block; position:fixed; width: 100%; height: 100%; }
+
+.popup{ padding: 10px 10px 35px; background: #fff; z-index: 999; display: none; position: absolute; right: 0; }
+#footer{ position: fixed; bottom: 0; background: #fff; width: 100%; font-size: 12px; text-align: center; }
+#footer div{ padding: 5px; }
+
+.close{ font-weight: bold; color: #F00; float: right; position: absolute; bottom: 5px; right: 10px; }

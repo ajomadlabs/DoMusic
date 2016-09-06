@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Table</title>
+
+    <!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!--CUSTOM BASIC STYLES-->
+    <link href="assets/css/basic.css" rel="stylesheet" />
+    <!--CUSTOM MAIN STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+<body>
+    <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">COMPANY NAME</a>
+            </div>
+
+            <div class="header-right">
+
+              <a href="message-task.html" class="btn btn-info" title="New Message"><b>30 </b><i class="fa fa-envelope-o fa-2x"></i></a>
+                <a href="message-task.html" class="btn btn-primary" title="New Task"><b>40 </b><i class="fa fa-bars fa-2x"></i></a>
+                <a href="login.html" class="btn btn-danger" title="Logout"><i class="fa fa-exclamation-circle fa-2x"></i></a>
+
+
+            </div>
+        </nav>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <div class="user-img-div">
+                            <img src="Do music pages/IMG-20141129-WA0022.jpg" class="img-circle" style="width: 100px;"/>
+
+                            <div class="inner-text">
+                                Anju Ann Mathew
+                            <br />
+                                <small>Last Login : 2 Weeks Ago </small>
+                            </div>
+                        </div>
+
+                    </li>
+
+
+                    <li>
+                        <a class="active-menu" href="index.html"><i class="fa fa-dashboard "></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-desktop "></i>Home<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#"><i class="fa fa-toggle-on"></i>Admin Panel</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-bell "></i>Notifications</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#"><i class="fa fa-yelp "></i>Song Edition<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="eng.html"><i class="fa fa-coffee"></i>English</a>
+                            </li>
+                            <li>
+                                <a href="mal.html"><i class="fa fa-flash "></i>Malayalam</a>
+                            </li>
+                             <li>
+                                <a href="hindi.html"><i class="fa fa-key "></i>Hindi</a>
+                            </li>
+                             <li>
+                                <a href="tamil.html"><i class="fa fa-send "></i>Tamil</a>
+                            </li>
+                            
+                             <li>
+                                <a href="song.html"><i class="fa fa-recycle "></i>Add or Remove</a>
+                            </li>
+                            
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="table.html"><i class="fa fa-flash "></i>Data Tables </a>
+                        
+                    </li>
+                     <li>
+                        <a href="#"><i class="fa fa-bicycle "></i>Forms <span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                           
+                             <li>
+                                <a href="form.html"><i class="fa fa-desktop "></i>Basic Form</a>
+                            </li>
+                             <li>
+                                <a href="form-advance.html"><i class="fa fa-code "></i>User Profile Form</a>
+                            </li>
+                             
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap "></i>Registered Users<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#"><i class="fa fa-bicycle "></i>User Count</a>
+                            </li>
+                             <li>
+                                <a href="#"><i class="fa fa-flask "></i>User List</a>
+                            </li>
+                            <li>
+                                <a href="#">Studio<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#"><i class="fa fa-plus "></i>New-releases</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-comments-o "></i>Playlist</a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+                   
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1 class="page-head-line">Data Table</h1>
+                        <h1 class="page-subhead-line">All The Tables used in DoMUsic. </h1>
+
+                    </div>
+                </div>
+                <!-- /. ROW  -->
+              
+            <div class="row">
+                <div class="col-md-6">
+                  <!--   Kitchen Sink -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Song Table
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>S_id</th>
+                                            <th>Song Name</th>
+                                            <th>Song Cat</th>
+                                            <th>S_files</th>
+                                            <th>S_Details</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            
+                                        </tr>
+                                        <tr>
+                                            
+                                        </tr>
+                                        <tr>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- End  Song Table -->
+                </div>
+                <div class="col-md-6">
+                     <!--   Playlist  -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Playlist Table
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Pl_name</th>
+                                            <th>P_Uname</th>
+                                            <th>S_id</th>
+                                            <th>Pl_File</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                      <!-- End  Playlist Table  -->
+                </div>
+            </div>
+                <!-- /. Profile  -->
+            <div class="row">
+                <div class="col-md-6">
+                      <!--    Striped Rows Table  -->
+                    <div class="panel panel-default" style="width: -moz-min-content;">
+                        <div class="panel-heading">
+                            Profile Table
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>P_Uname</th>
+                                            <th>P_password</th>
+                                            <th>P_Name</th>
+                                            <th>P_Address</th>
+                                            <th>P_Email</th>
+                                            <th>P_Phn</th>
+                                            <th>P_Dp</th>
+                                            <th>P_Country</th>
+                                            <th>P_Ncat</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  End  Profile Table  -->
+                </div>
+                
+            </div>
+                <!-- /. News  -->
+            <div class="row">
+                <div class="col-md-6">
+                     <!--    Hover Rows  -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            News Table
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>P_Ncat</th>
+                                            <th>N_src</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            
+                                        </tr>
+                                        <tr>
+                                            
+                                        </tr>
+                                        <tr>
+                                            
+                                        </tr>
+                                        <tr>
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End  News Table  -->
+                </div>
+                <div class="col-md-6">
+                     <!--    Studio Table  -->
+                    <div class="panel panel-default">
+                       
+                        <div class="panel-heading">
+                            Studio Table
+                        </div>
+                        
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>P_Uname</th>
+                                            <th>S_Name</th>
+                                            <th>S_id</th>
+                                            <th>S_file</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="success">
+                                            
+                                        </tr>
+                                        <tr class="info">
+                                            
+                                        </tr>
+                                        <tr class="warning">
+                                            
+                                        </tr>
+                                        <tr class="danger">
+                                            
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  end  Studio Table  -->
+                </div>
+            </div>
+                <!-- /. ROW  -->
+
+            </div>
+            <!-- /. PAGE INNER  -->
+        </div>
+        <!-- /. PAGE WRAPPER  -->
+    </div>
+    <!-- /. WRAPPER  -->
+    
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.js"></script>
+     <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+    <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+
+
+</body>
+</html>

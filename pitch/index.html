@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Pitch Detector</title>
+		<link href='http://fonts.googleapis.com/css?family=Alike' rel='stylesheet' type='text/css'>
+        <link href="advance-admin/assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="advance-admin/assets/css/font-awesome.css" rel="stylesheet" />
+    <!--CUSTOM BASIC STYLES-->
+    <link href="advance-admin/assets/css/basic.css" rel="stylesheet" />
+    <!--CUSTOM MAIN STYLES-->
+    <link href="advance-admin/assets/css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <link href="css1/bootstrap.min.css" rel="stylesheet">
+    <link href="css1/bootstrap-theme.css" rel="stylesheet">
+    <link href="css1/elegant-icons-style.css" rel="stylesheet" />
+    <link href="css1/font-awesome.min.css" rel="stylesheet" />    
+    <link rel="stylesheet" href="css1/owl.carousel.css" type="text/css">
+	<link href="css1/jquery-jvectormap-1.2.2.css" rel="stylesheet">
+	<link rel="stylesheet" href="css1/fullcalendar.css">
+	<link href="css1/widgets.css" rel="stylesheet">
+    <link href="css1/style1.css" rel="stylesheet">
+    <link href="css1/style-responsive.css" rel="stylesheet" />
+	<link href="css1/xcharts.min.css" rel=" stylesheet">	
+	<link href="css1/jquery-ui-1.10.4.min.css" rel="stylesheet">
+		<style>
+			body { font: 14pt 'Alike', sans-serif;}
+			#note { font-size: 164px; }
+			.droptarget { background-color: #348781}
+			div.confident { color: black; }
+			div.vague { color: lightgrey; }
+			#note { display: inline-block; height:180px; text-align: left;}
+			
+			#detector { width: 300px; height: 300px; border: 4px solid gray; border-radius: 8px; text-align: center; padding-top: 10px;}
+			#output { width: 300px; height: 42px; }
+			#flat { display: none; }
+			#sharp { display: none; }
+			.flat #flat { display: inline; }
+			.sharp #sharp { display: inline; }
+		</style>
+	</head>
+	<body>
+  <section id="container" class="">
+     <header class="header dark-bg">
+            <div class="toggle-nav">
+                <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i></i></div>
+            </div>
+
+            
+            <a href="profile1.php" class="logo">DO MUSIC<span class="lite"></a>
+            
+
+            
+            <div class="top-nav notification-row">                
+             
+                <ul class="nav pull-right top-menu">
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            <span class="profile-ava">
+                                <img alt="" src="<?php echo $pp;?>" width="40px" height="50px" style="margin-top:-10px;">
+                            </span>
+                            <span class="username"><?php echo $name;?></span>
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu extended logout">
+                            <div class="log-arrow-up"></div>
+                            <li class="eborder-top">
+                                <a href="#"><i class="icon_profile"></i> My Profile</a>
+                            </li>
+                            <li>
+                                <a href="timeline.php"><i></i> Timeline</a>
+                            </li>
+                            <li>
+                                <a href="login1.php"><i></i> Log Out</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+      </header>      
+      <aside>
+          <div id="sidebar"  class="nav-collapse ">
+              
+              <ul class="sidebar-menu">                
+                  <li class="active">
+                      <a class="" href="timeline.php">
+                          <span>Timeline</span>
+                      </a>
+                  </li>
+				  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <span>Studio Box</span>
+                      </a>
+                  </li>       
+                  <li class="sub-menu">
+                      <a href="javascript:;" class="">
+                          <span>Music Box</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a  href="settings.php">
+                          <span>Settings</span>
+                      </a>
+                  </li>
+              </ul>
+              
+          </div>
+      </aside>
+      
+      <section id="main-content">
+          <section class="wrapper">            
+            
+           </div>  
+				</div>
+				
+              </div>
+		<script src="js/pitchdetect.js"></script>
+		<div>
+		<p>
+			<button onclick="this.innerText = togglePlayback()">use demo audio</button>
+			<button onclick="toggleLiveInput()">Click me</button>
+			<button onclick="toggleOscillator()">use oscillator</button>
+			<!--<button onclick="updatePitch(0);">sample</button>-->
+		</p>
+
+		<div id="detector" class="vague">
+			<div class="pitch"><span id="pitch">--</span>Hz</div>
+			<div class="note"><span id="note">--</span></div>   
+			<canvas id="output" width=300 height=42></canvas>
+			<div id="detune"><span id="detune_amt">--</span><span id="flat">cents &#9837;</span><span id="sharp">cents &#9839;</span></div>
+		</div>
+        </div>
+		<script type="text/javascript">
+
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-35593052-1']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</body>
+</html>

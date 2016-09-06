@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .slide{
+            position: relative;
+        max-width: 495px;
+        height: 370px;
+        margin: 5em auto .5em auto;
+    }
+    .slide figure{
+        margin: 0;
+        position: absolute;
+    }
+    .slide figcaption{
+        position: absolute;
+        top: 0;
+        color: #fff;
+        background: rgba(0,0,0, .3);
+        font-size: .8em;
+        padding: 8px 12px;
+        opacity: 0;
+        transition: opacity .5s;
+    }
+    .slide:hover figure figcaption{
+        transition: opacity .5s;
+        opacity: 1;
+    }
+    .slide figure{
+        opacity: 0;
+    }
+    figure:nth-child(1) {
+        animation: xfade 48s 0s infinite;
+    }
+    figure:nth-child(2) {
+        animation: xfade 48s 6s infinite;
+    }
+    @keyframes xfade{
+        0%{
+            opacity: 1;
+        }
+            100% {
+                opacity: 1:
+            }
+    }
+                    
+        
+</style>
+    <body>
+        <div class="slide">
+            <figure>
+                <img src="guitar.jpg" width="495" height="370">
+                <figcaption><strong>HELLO</strong>oh you</figcaption>
+            </figure>
+            <figure>
+                <img src="ajo2.jpg" width="495" height="370">
+                <figcaption><strong>hello</strong>not you</figcaption>
+            </figure>
+        </div>
+    </body>
+</html>

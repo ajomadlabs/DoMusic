@@ -1,0 +1,23 @@
+Create your own firefox search extension
+Creating Firefox search extension(Plug in) and make customized quick search for your website users.
+http://www.webinfopedia.com/firefox-search-plugin.html
+
+Export database record to Excel using PHP
+Export mysql record as excel report using PHP to generate website report system.
+http://www.webinfopedia.com/export-database-data-to-excel-in-php.html
+
+Dynamic HTML form field creation using PHP and Ajax for you web page form.
+Create HTMl form field like text box,select box,check box etc dynamically using PHP and Ajax.
+http://www.webinfopedia.com/dynamic-form-field-cration.html
+
+What is PHP? PHP Stands for Hypertext Preprocesses. Learn PHP with tutorials.
+PHP means Hypertext Preprocesses used in Web Developmental to create dynamic pages. php codes are embedded in HTML source and handled by web server by using PHP Processor to create dynamic web pages.
+http://www.webinfopedia.com/what-is-PHP-and-basic-PHP-tutorials.html
+
+Auto tweet with OAuth using PHP and Cron job
+Create a auto tweet application with twitter OAuth using PHP and Cron jobs and tweet status from your database.
+http://www.webinfopedia.com/auto-tweet-with-oauth-in-php.html
+
+PHP and Ajax tutorial to upload image without refreshing the web page.
+Ajax PHP image upload system to upload and preview image dynamically to overcome the limitations of conventional image upload method.
+http://www.webinfopedia.com/upload-image-using-PHP-ajax.html

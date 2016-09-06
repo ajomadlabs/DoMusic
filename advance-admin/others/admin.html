@@ -1,0 +1,251 @@
+<?php
+session_start();
+$name="";
+    $con=mysqli_connect("localhost","root","","domusic");
+if(!$con) {
+    die("Connection Failed: " . mysqli_connect_error());
+}
+    $un=$_SESSION["email"];
+    $sql="select * from admin_login where email='$un'";
+    $retval=mysqli_query($con,$sql);
+    $count=mysqli_num_rows($retval);
+    if($count==1){
+    while($row=mysqli_fetch_assoc($retval)){
+        $email=$row["email"];
+    }
+    }
+    else{
+        $name="ERROR";
+    }
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <!--<link rel="stylesheet" type="text/css" href="Do music pages/css/materialize.min.css">
+        <link rel="stylesheet" type="text/css" href="Do music pages/style.scss">-->
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="" media="all" rel="stylesheet" type="text/css">
+        <!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+       <!--CUSTOM BASIC STYLES-->
+    <link href="assets/css/basic.css" rel="stylesheet" />
+    <!--CUSTOM MAIN STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+    <!-- GOOGLE FONTS-->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+        <title>ADMIN</title>    
+    </head>
+  <body>
+      <div id="wrapper">
+        <nav class="navbar navbar-default navbar-cls-top " role="navigation" style="height: 84px;">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="Do music pages\Project\welcome.html" style="height: 84px;font-size: 30px;">DO MUSIC</a>
+            </div>
+
+            <div class="header-right">
+
+                <a href="message-task.html" class="btn btn-primary" title="Message"><b>30 </b><i class="fa fa-envelope-o fa-2x"></i></a>
+                <a href="tasks.html" class="btn btn-primary" title="Tasks"><b>40 </b><i class="fa fa-tasks fa-2x"></i></a>
+                <a href="login.php" class="btn btn-danger" title="Logout"><i class="fa fa-user fa-2x"></i></a>
+
+            </div>
+            
+        </nav>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation" style="opacity: 0.7;">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <li>
+                        <div class="user-img-div" style="background-color: #000000;">
+                            <img src="Do music pages/IMG-20141129-WA0022.jpg" style="width: 100px;" class="img-circle"/>
+
+                            <div class="inner-text">
+                                <?php echo $name; ?>
+                            <br />
+                                <small>Last Login : 2 Weeks Ago </small>
+                            </div>
+                        </div>
+
+                    </li>
+
+
+                    <li>
+                        <a class="active-menu" href="admin.html"><i class="fa dashboard "></i>Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-desktop "></i>Home <span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="invoice.html"><i class="fa fa-toggle-on"></i>Site Details</a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa fa-bell "></i>News Updates</a>
+                            </li>
+                        </ul>
+                    </li>
+                     <li>
+                        <a href="#"><i class="fa fa-music "></i>Song Edition<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="eng.html"><i class="fa fa-soundcloud"></i>English</a>
+                            </li>
+                            <li>
+                                <a href="mal.html"><i class="fa fa-flash "></i>Malayalam</a>
+                            </li>
+                             <li>
+                                <a href="hindi.html"><i class="fa fa-key "></i>Hindi</a>
+                            </li>
+                             <li>
+                                <a href="tamil.html"><i class="fa fa-send "></i>Tamil</a>
+                            </li>
+                            
+                             <li>
+                                <a href="song.html"><i class="fa fa-recycle "></i>Add or Remove</a>
+                            </li>
+                            
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="tablead.html"><i class="fa fa-table "></i>Data Tables </a>
+                        
+                    </li>
+                     <li>
+                        <a href="#"><i class="fa fa-database "></i>Forms <span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                           
+                             <li>
+                                <a href="form.html"><i class="fa fa-desktop "></i>Basic Form</a>
+                            </li>
+                             <li>
+                                <a href="form-advance.html"><i class="fa fa-code "></i>User Profile Form</a>
+                            </li>
+                             
+                           
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-sitemap "></i>Users<span class="fa arrow"></span></a>
+                         <ul class="nav nav-second-level">
+                            <li>
+                                <a href="#"><i class="fa fa-bicycle "></i>User News</a>
+                            </li>
+                             <li>
+                                <a href="#"><i class="fa fa-user "></i>User List</a>
+                            </li>
+                            <li>
+                                <a href="#">User-Studio<span class="fa arrow"></span></a>
+                                <ul class="nav nav-third-level">
+                                    <li>
+                                        <a href="#"><i class="fa fa-plus "></i>New-releases</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fa fa-comments-o "></i>Playlist</a>
+                                    </li>
+
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+                   
+                </ul>
+            </div>
+          </nav>
+     
+        <!-- /. NAV SIDE  -->
+           <div class="row">
+                   
+               <strong style="padding-left: 290px; color: #004B6A; font-size: 40px;">Admin Home</strong>  
+               </div>
+                </div>
+          <!--notification-->
+          <div class="col-md-4" style="left: 910px; opacity: 0.9;">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <i class="fa fa-bell fa-fw"></i>Notifications Panel
+                            </div>
+
+                            <div class="panel-body">
+                                <div class="list-group">
+
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-twitter fa-fw"></i>Followers
+                                    <span class="pull-right text-muted small"><em>80</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-envelope fa-fw"></i>User Count
+                                    <span class="pull-right text-muted small"><em>50</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-tasks fa-fw"></i>Comments
+                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-upload fa-fw"></i> Downloads
+                                    <span class="pull-right text-muted small"><em>70</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-shopping-cart fa-fw"></i>New Release
+                                    <span class="pull-right text-muted small"><em>9:49 AM</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-bolt fa-fw"></i>Server Crashed!
+                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                    </span>
+                                    </a>
+                                    <a href="#" class="list-group-item">
+                                        <i class="fa fa-warning fa-fw"></i>Server Not Responding
+                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                    </span>
+                                    </a>
+                                </div>
+                                <!-- /.list-group -->
+                                <a href="#" class="btn btn-info btn-block">View All Playlist</a>
+                            </div>
+
+                        </div>
+                    </div>
+           <!-- /. ROW  -->
+                
+                    <div class="col-md-2" style="padding-top: 145px; padding-left: 20px; opacity: 0.6;">
+                        <div class="main-box mb-dull">
+                            <a href="#">
+                                <i class="fa fa-eye fa-3x"></i>
+                                <h5>Recent Views</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2" style="padding-top: 282px;opacity: 0.6;">
+                        <div class="main-box mb-dull">
+                            <a href="#">
+                                <i class="fa fa-linkedin-square fa-3x"></i>
+                                <h5>New Visitors</h5>
+                            </a>
+                        </div>
+                 
+
+                </div>
+                <!-- /. ROW  -->
+
+      </div>
+      <!-- /. FOOTER  -->
+    <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+    <!-- JQUERY SCRIPTS -->
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <!-- BOOTSTRAP SCRIPTS -->
+    <script src="assets/js/bootstrap.js"></script>
+    <!-- METISMENU SCRIPTS -->
+    <script src="assets/js/jquery.metisMenu.js"></script>
+       <!-- CUSTOM SCRIPTS -->
+    <script src="assets/js/custom.js"></script>
+    </body>
+</html>

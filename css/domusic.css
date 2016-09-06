@@ -1,0 +1,306 @@
+ #gomusic {
+                padding-top: 380px;
+                padding-bottom: 0px;
+                padding-right: 0px;
+                padding-left: 1000px;
+                width: 1090px;
+                height:480px;
+                font-size: 30px;
+                background-image: url(bg3.jpg);
+                color: black;
+    }
+ body{
+     margin:0 0 0 0;
+ }
+
+    #goaddicted {
+                position: top;
+                top:    0px;
+                left: 0px;
+                right: 0px;
+                bottom: 20px;
+                width:1900px;
+                height:100%;
+                object-position: cover;
+        
+    }
+    #explore {
+            padding-top: 380px;
+            font-size: 40px;
+            padding-left: 980px;
+            background-image: url(guitarpic.jpg);
+            height: 400px;
+            width: 1090px;
+            color: black;
+    }
+    #navbar {
+                background-color: black;
+                color:white;
+                font-size: 30px;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                height: 50px;
+                opacity: 0.6;
+                filter:alpha(opacity=50);
+    }
+    #menu {
+                list-style-type:none;
+                margin:0;
+                align:top;
+                overflow:hidden;
+                background-color: black;
+                
+    }
+    .menu_item {
+                float:left;
+                display: inline-block;
+                color:black;
+                text-decoration: none;
+    }
+    .menu_item_list {
+                        display:inline-block;
+                        text-decoration: none;
+                        color:white;
+                        background-color: black;
+                        padding: 20px 20px;
+    }
+    .menu_item_list:hover {
+                            background-color:white;
+                            color:black;
+    }
+    #gomusic_style{
+                background-color:white;
+                border-radius: 25px;
+                margin-right: 800px;
+                width: 600px;
+                background-size: 20px;
+                opacity: 0.1;
+                box-shadow: 2px 2px black;
+                color:black;
+                text-decoration: none;
+                
+    }
+    #gomusic_style:hover {
+                    background-color:black;
+                    color:white;
+                    box-shadow: 2px 2px white;
+    }
+    #explore_style {
+                background-color: white;
+                border-radius: 25px;
+                margin-right: 800px;
+                width: 500px;
+                background-size: 40px;
+                box-shadow: 1px 1px black;
+                opacity: 0.4;   
+                color: black;
+                text-decoration: none;
+                
+    }
+    #explore_style:hover {
+                    background-color:   black;
+                    color:  white;
+                    box-shadow: 2px 2px white;
+    }
+    #mainpage {
+                background-image: url(bg3.jpg);
+    }
+    #home_design {
+        position: relative;
+        background-color: black;
+        border: 1px solid black;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+        font-size: 20px;
+        color: #FFF;
+        width: 200px;
+        height: 80px;
+        box-shadow: 5px 5px black;
+        margin-top: 280px;
+        margin-left:700px;
+        text-align: center;
+        -webkit-transition-duration:0.4s;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    #home_design:hover {
+        background-color: white;
+        color: black;
+        box-shadow:5px 5px black;
+    }
+    #home_design:active{
+        background-color: white;
+        color: black;
+        opacity: 0.2;
+        box-shadow: 8px 8px black;
+        transform: translateY(20px);
+        
+    }
+    #malayalam_design {
+        position: relative;
+        background-color: black;
+        border: 1px solid black;
+        font-size: 20px;
+        color: #FFFFFF;
+        width: 200px;
+        height: 100px;
+        box-shadow: 5px 5px black;
+        margin-top: 10px;
+        margin-left:0px;
+        text-align: center;
+        -webkit-transition-duration:0.4s;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    #malayalam_design:hover {
+        background-color: white;
+        color: black;
+        box-shadow:5px 5px black;
+    }
+    #malayalam_design:active{
+        background-color: white;
+        color: black;
+        opacity: 0.2;
+        box-shadow: 8px 8px black;
+        transform: translateY(20px);
+    }
+    
+     #tamil_design {
+        position: relative;
+        background-color: black;
+        font-size: 20px;
+        color: #FFFFFF;
+        width: 200px;
+        height:200px
+        box-shadow: 5px 5px black;
+        top:8px;
+        left: 0px;
+        text-align: center;
+        -webkit-transition-duration:0.4s;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    #tamil_design:hover {
+        background-color: white;
+        color: black;
+        box-shadow:5px 5px black;
+    }
+    #tamil_design:active{
+        background-color: white;
+        color: black;
+        opacity: 0.2;
+        box-shadow: 8px 8px black;
+        transform: translateY(20px);
+    }
+    #english_design {
+        position: relative;
+        background-color: black;
+        border: 1px solid black;
+        font-size: 20px;
+        color: #FFFFFF;
+        width: 200px;
+        height: 100px;
+        box-shadow: 5px 5px black;
+        margin-top: 0px;
+        margin-left:380px;
+        text-align: center;
+        -webkit-transition-duration:0.4s;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    #english_design:hover {
+        background-color: white;
+        color: black;
+        box-shadow:5px 5px black;
+    }
+    #english_design:active{
+        background-color: white;
+        color: black;
+        opacity: 0.2;
+        box-shadow: 8px 8px black;
+        transform: translateY(20px);
+    }
+    #hindi_design {
+        position: relative;
+        background-color: black;
+        border: 1px solid black;
+        font-size: 20px;
+        color: #FFFFFF;
+        width: 200px;
+        margin-top: 8px;
+        margin-left:0px;
+        box-shadow: 5px 5px black;
+        height: 100px;
+        text-align: center;
+        -webkit-transition-duration:0.4s;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+        opacity: 0.5;
+    }
+    #hindi_design:hover {
+        background-color: white;
+        color: black;
+        box-shadow:5px 5px black;
+    }
+    #hindi_design:active{
+        background-color: white;
+        color: black;
+        opacity: 0.2;
+        box-shadow: 8px 8px black;
+        transform: translateY(20px);
+    }
+    #find{
+        margin-top: 300px;
+        margin-left:490px;
+        width: 600px;
+        height: 45px;
+        opacity: 0.3;
+        border: solid red;
+        border-radius: 5px;
+        color: solid black;
+        font-size: 30px;
+        font-style: oblique;
+    }
+    #find::-moz-placeholder{
+        background-color:black;
+        width: 800px;
+        height: 60px;
+        color: white;
+        opacity: 1;
+        
+    }
+    #go{
+        font-size: 20px;
+        height:60px;
+        width: 140px;
+        margin-top:10px;
+        margin-left:0px;
+        margin-bottom:0px;
+        opacity: 0.4;
+        padding-bottom:5px;
+        border:solid red;
+        background-color: black;
+        color: white;
+    }
+    #go:active{
+        background-color: white;
+        opacity: 0.2;
+        color: black;
+        border: solid red;
+    }

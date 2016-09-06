@@ -1,0 +1,17 @@
+<div>
+            <button id="malayalam_design" type="button"><h1>MALAYALAM</h1></button>
+        </div>
+        <div>
+            <button id="tamil_design" type="button"><h1>TAMIL</h1></button>
+        </div>
+        <div id="search_text">
+            <form>
+                <input type="text" id="find" title="DOMUSIC" placeholder="Domusic..."><button                       id="go" type="button">SEARCH</button>
+            </form>
+        </div>
+        <div id="ENGLISH">
+            <button id="english_design" type="button"><h1>ENGLISH</h1></button>
+        </div>
+        <div id="HINDI">
+            <button id="hindi_design" type="button"><h1>HINDI</h1></button>
+        </div>
